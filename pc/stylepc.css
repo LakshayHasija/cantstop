@@ -315,7 +315,7 @@ section:nth-child(2n+2) .content{
 }
 
 section:nth-child(1) .content h2{
-  font-size: 60px;
+  font-size: 50px;
   color: white;
 }
 
@@ -326,7 +326,7 @@ section:nth-child(1) .content p{
 }
 
 section:nth-child(2) .content h2{
-  font-size: 60px;
+  font-size: 50px;
   color: white;
   text-shadow: #000000;
 
@@ -340,7 +340,7 @@ section:nth-child(2) .content p{
 }
 
 section:nth-child(3) .content h2{
-  font-size: 60px;
+  font-size: 50px;
   color: white;
 }
 
