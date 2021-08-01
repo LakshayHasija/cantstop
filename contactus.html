@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+   <!---- <title> Responsive Contact Us Form | CodingLab </title>--->
+    <link rel="stylesheet" href="./CONTACTUS/style.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+    <div class="sidebar">
+        <div class="logo-details">
+                <i class='bx bx-expand-alt icon'></i>
+            <div class="logo_name">CANTSTOP</div>
+            <i class='bx bx-menu' id="btn" ></i>
+        </div>
+        <ul class="nav-list">
+          <li>
+              <i class='bx bx-search' ></i>
+             <input type="text" placeholder="Search...">
+             <span class="tooltip">Search</span>
+          </li>
+          <li>
+            <a href="./index.html">
+              <i class='bx bxs-home'></i>
+              <span class="links_name">Home</span>
+            </a>
+             <span class="tooltip">Home</span>
+          </li>
+          <li>
+           <a href="./tips.html">
+            <i class='bx bx-bulb' ></i>            
+            <span class="links_name">Tips</span>
+           </a>
+           <span class="tooltip">Tips</span>
+         </li>
+         <li>
+           <a href="./ninten.html">
+            <i class='bx bxs-yin-yang'></i>
+            <span class="links_name">Nintendo</span>
+           </a>
+           <span class="tooltip">Nintendo</span>
+         </li>
+         <li>
+           <a href="./pcg.html">
+            <i class='bx bx-headphone' ></i>            
+            <span class="links_name">PC Gaming</span>
+           </a>
+           <span class="tooltip">PC Gaming</span>
+         </li>
+         <li>
+           <a href="./aboutme.html">
+            <i class='bx bxs-info-circle'></i>           
+            <span class="links_name">About Me</span>
+           </a>
+           <span class="tooltip">About Me</span>
+         </li>
+         <li>
+           <a href="./contactus.html">
+            <i class='bx bx-comment-detail' ></i>            
+            <span class="links_name">Contact Us</span>
+           </a>
+           <span class="tooltip">Contact Us</span>
+         </li>
+         <li class="profile">
+             <div class="profile-details">
+              <img src="./ASSET/Screenshot_2021-04-21-02-13-42-29.jpg" alt="">
+              <div class="name_job">
+                 <div class="name">Lakshay Hasija</div>
+                 <div class="job">Web designer</div>
+               </div>
+             </div>
+             <a href="./aboutme.html">
+              <i class='bx bxs-face-mask' id="log_out"></i>
+            </a>     
+          </li>
+        </ul>
+      </div> 
+  <div class="container">
+    <div class="content">
+      <div class="image-box">
+       <img src="./CONTACTUS/mzqxrtlfqtlcnzbdmjrfmeq1nja6ode4mmy4ntu0yjbjmjflmgzmmdg5otllyjm5nwe5zju6ojo6oja.jpg" alt="">
+      </div>
+    <form action="#">
+      <div class="topic">Send us a message</div>
+      <div class="input-box">
+        <input type="text" required>
+        <label>Enter your name</label>
+      </div>
+      <div class="input-box">
+        <input type="email" required>
+        <label>Enter your email</label>
+      </div>
+      <div class="input-box">
+        <input type="text" required>
+        <label>Enter your message</label>
+      </div>
+      <div class="input-box">
+        <input type="submit" value="Send Message">
+      </div>
+    </form>
+  </div>
+  </div>
+  <script>
+       let sidebar = document.querySelector(".sidebar");
+let closeBtn = document.querySelector("#btn");
+let searchBtn = document.querySelector(".bx-search");
+
+closeBtn.addEventListener("click", ()=>{
+  sidebar.classList.toggle("open");
+  menuBtnChange();//calling the function(optional)
+});
+
+searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search iocn
+  sidebar.classList.toggle("open");
+  menuBtnChange(); //calling the function(optional)
+});
+
+// following are the code to change sidebar button(optional)
+function menuBtnChange() {
+ if(sidebar.classList.contains("open")){
+   closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+ }else {
+   closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
+ }
+}
+
+  </script>
+</body>
+</html>
