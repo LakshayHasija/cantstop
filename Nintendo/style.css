@@ -398,7 +398,7 @@ nav{
 
 @media (max-width:768px){
     .hero img{
-        height: 400px;
+        height: 300px;
     }
     .details h1{
         font-size: 38px;
