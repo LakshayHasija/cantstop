@@ -397,6 +397,15 @@ nav{
 
 
 @media (max-width:768px){
+    nav{
+    min-height: 10vh;
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px 0px 60px;
+    }
     .hero img{
         height: 300px;
     }
