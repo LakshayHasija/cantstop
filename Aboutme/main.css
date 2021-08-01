@@ -323,6 +323,7 @@ section{
         width: 100%;
     }
     .image{
+        background: url("./card\ -\ Copy.jpg") center/cover no-repeat;
         height: 100vh;
     }
     .content{
