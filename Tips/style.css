@@ -338,4 +338,8 @@ section .cards .box .contentBx div p{
 section{
   padding-left: 80px;
   }
+section .cards{
+    width: 280px;
+    height: 280px;
+}
 }
